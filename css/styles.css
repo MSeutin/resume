@@ -1,0 +1,183 @@
+/***************Tag Selectors***************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat;
+  text-align: left;
+  font-weight: normal;
+  line-height: 200%;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+
+hr {
+  width: 50%;
+  border-top: 2rem;
+  border-color: #a52a2a;
+  margin: 3rem auto;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+h2 {
+  color: #3964C3;
+}
+
+
+        /*****Class Selectors*****/
+/***************Navbar Code******************/
+
+.menu-bar {
+  background-color: #162447;
+  text-align: center;
+}
+
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+
+.menu-bar ul li {
+  width: 160px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.active, .menu-bar ul li:hover {
+  background-color: #1F4068;
+  border-radius: 3px;
+}
+
+.menu-bar .fa {
+  margin-right: 8px;
+
+}
+
+.sub-menu-1 {
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background-color: #1F4068;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted whitesmoke;
+  background-color: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+  color: #a52a2a;
+}
+
+.fa-angle-right {
+  float: right;
+}
+
+.sub-menu-2 {
+  display: none;
+}
+
+.hover-me:hover .sub-menu-2 {
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background-color: #1F4068;
+}
+
+/***************dots for lists****************/
+
+.red_dots li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #a52a2a; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+/*****************My Pic*************/
+
+.michael_pic {
+  float: right;
+  width: 15%;
+  position: relative;
+}
+
+/*******************Michael Heading H1**************/
+
+.heading {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5rem;
+  text-align: center;
+  font-weight: normal;
+  line-height: 2;
+}
+
+
+/********************MAIN CONTAINER****************/
+.main_container {
+  background-color: #101820ff;
+  color: whitesmoke;
+  padding: 5rem;
+}
+
+.resume_block {
+  padding-left: 5%;
+}
+
+.bio {
+    width: 80%;
+    padding-left: 3rem;
+}
+
+
+/**************DVC link bottom of page*************/
+              /*****ID Selectors*****/
+#dvc {
+  color: #006b38ff;
+  font-weight: bold;
+}
+
+#dvc:visited {
+  color: #a52a2a;
+  font-weight: bold;
+}
+
+#dvc:hover {
+  color: whitesmoke;
+}
+
